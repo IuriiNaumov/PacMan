@@ -32,13 +32,11 @@ html {
 .menu {
     float: left;
     position: relative;
-    height: 30px;
 }
 
 .menu > div {
     float: left;
     position: relative;
-    font-size: 30px;
     border: none;
     background-color: white;
     margin: 0;
@@ -52,6 +50,13 @@ html {
     font-family: "IcoMoon-Free";
     text-decoration: none;
     color: rgb(54, 120, 219);
+    line-height: 45px;
+    font-size: 22pt;
+}
+
+.ghostMenu > p{
+    line-height: 45px;
+    font-size: 28pt;
 }
 
 .ghostMenu:hover .back {
