@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+}
+@font-face {
+    font-family: "IcoMoon-Free";
+    src: url("IcoMoon-Free.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+body,
+html {
+    margin: 0;
+    height: 100%;
+}
+.icon {
+    font-family: "IcoMoon-Free";
+}
+
+.layout {
+    display: grid;
+    min-height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px auto 100px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: white;
+    margin: 15px 0 20px;
+}
+
+.menu {
+    float: left;
+    position: relative;
+    height: 30px;
+}
+
+.menu > div {
+    float: left;
+    position: relative;
+    font-size: 30px;
+    border: none;
+    background-color: white;
+    margin: 0;
+    user-select: none;
+    font-family: "Bebas Neue";
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+.menu > div > a {
+    font-family: "IcoMoon-Free";
+    text-decoration: none;
+    color: rgb(54, 120, 219);
+}
+
+.ghostMenu:hover .back {
+    display: block;
+}
+
+.back {
+    padding: 10px 0 0 30px;
+    width: 400px;
+    height: 200px;
+    left: 100px;
+    top: 20px;
+    display: none;
+}
+
+.search {
+    float: right;
+    margin: 0 100px 0 0;
+    font-size: 16px;
+    width: 350px;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    float: right;
+    border: 2px solid rgb(54, 120, 219);
+}
+
+.search input {
+    border: none;
+    display: inline;
+    height: 38px;
+    width: 260px;
+    border: none;
+    outline: none;
+}
+
+.search .icon {
+    display: inline;
+    width: 30px;
+    margin-top: 1px;
+}
+
+.searchPic {
+    background: url("burger.png") no-repeat center center;
+    float: left;
+    width: 31px;
+    height: 37px;
+    margin: 0 5px 0 5px;
+    overflow: hidden;
+}
+
+.popup {
+    box-shadow: rgb(243, 62, 62) 0 0 5px 1px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.popup > div {
+    font-size: 26px;
+    width: 100%;
+}
+
+.popup a {
+    text-decoration: none;
+    font-family: "Bebas Neue";
+    line-height: 50px;
+    width: 100%;
+    color: black;
+}
+
+.monsterBlinky:hover a,
+.monsterPinky:hover a,
+.monsterInky:hover a,
+.monsterClyde:hover a {
+    color: white;
+}
+
+.pic {
+    margin: 0 auto;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+}
+
+.monsterBlinky .pic {
+    background: url("blinky.png") no-repeat center center;
+}
+
+.monsterPinky .pic {
+    background: url("pinky.png") no-repeat center center;
+}
+.monsterInky .pic {
+    background: url("inky.png") no-repeat center center;
+}
+
+.monsterClyde .pic {
+    background: url("clyde.png") no-repeat center center;
+}
+
+.monsterBlinky:hover {
+    background-color: pink;
+    border-radius: 10px 0 0;
+}
+
+.monsterPinky:hover {
+    background-color: rgb(54, 120, 219);
+}
+
+.monsterInky:hover {
+    background-color: #fd9300;
+}
+
+.monsterClyde:hover {
+    background-color: rgb(243, 62, 62);
+    border-radius: 0 0 10px 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.content > div {
+    width: 50%;
+}
+
+.leftContent {
+    background: url("allGhosts.png") no-repeat center center;
+    width: 30%;
+    height: 300px;
+    float: left;
+    background-size: contain;
+}
+.rightContent {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 300px;
+    padding-left: 50px;
+}
+
+.rightContent h1 {
+    font-family: "Bebas Neue";
+}
+.rightContent p {
+    font-size: 16pt;
+    font-family: "Rubik", sans-serif;
+}
+
+.footer {
+    background-color: rgb(54, 120, 219);
+}
+.footer > div {
+    width: 400px;
+    height: 100%;
+    margin: 0 auto;
+    background: url("pacman.png") no-repeat center center;
+}
+
+/*Blinky*/
+.footerBlinky {
+    background-color: pink;
+}
+
+.searchBlinky {
+    border: 2px solid pink;
+}
+
+.leftContentBlinky {
+    background: url("BlinkyPage.png") no-repeat center center;
+}
+
+.searchPicBlinky {
+    background: url("blinky.png") no-repeat center center;
+}
+.footerBlinky {
+    background-color: pink;
+}
+/*************************************************************************/
+
+/*Pinky*/
+.searchPinky {
+    border: 2px solid pink;
+}
+
+.searchPinky {
+    border: 2px solid rgb(54, 120, 219);
+}
+
+.leftContentPinky {
+    background: url("PinkyPage.png") no-repeat center center;
+}
+
+.searchPicPinky {
+    background: url("pinky.png") no-repeat center center;
+}
+/****************************************************************************/
+
+/*Clyde*/
+.footerClyde {
+    background-color: rgb(243, 62, 62);
+}
+
+.searchClyde {
+    border: 2px solid rgb(243, 62, 62);
+}
+
+.leftContentClyde {
+    background: url("clydePage.png") no-repeat center center;
+}
+
+.searchPicClyde {
+    background: url("Clyde.png") no-repeat center center;
+}
+/*******************************************************************************/
+
+/*Inky*/
+.footerInky {
+    background-color: #fd9300;
+}
+
+.searchInky {
+    border: 2px solid #fd9300;
+}
+
+.leftContentInky {
+    background: url("InkyPage.png") no-repeat center center;
+}
+
+.searchPicInky {
+    background: url("inky.png") no-repeat center center;
+}
+/*******************************************************************************/
