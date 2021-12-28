@@ -114,46 +114,51 @@ html {
     text-align: center;
 }
 
-.popup > div {
-    font-size: 26px;
-    width: 100%;
-}
 
+    
 .popup a {
     text-decoration: none;
     font-family: "Bebas Neue";
     line-height: 50px;
     width: 100%;
     color: black;
+    font-size: 26px;
+    width: 100%;
+    display: block;
 }
 
-.monsterBlinky:hover a,
-.monsterPinky:hover a,
-.monsterInky:hover a,
-.monsterClyde:hover a {
+
+.monsterBlinky:hover p,
+.monsterPinky:hover p,
+.monsterInky:hover p,
+.monsterClyde:hover p {
     color: white;
 }
 
-.pic {
+.popup div {
     margin: 0 auto;
     display: inline-block;
     height: 20px;
     width: 20px;
     margin-top: 10px;
 }
+.popup p {
+    display: inline-block;
+}
 
-.monsterBlinky .pic {
+
+.monsterBlinky div {
     background: url("blinky.png") no-repeat center center;
 }
 
-.monsterPinky .pic {
+.monsterPinky div {
     background: url("pinky.png") no-repeat center center;
 }
-.monsterInky .pic {
+.monsterInky div {
     background: url("inky.png") no-repeat center center;
 }
 
-.monsterClyde .pic {
+.monsterClyde div {
     background: url("clyde.png") no-repeat center center;
 }
 
