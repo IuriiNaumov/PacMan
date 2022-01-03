@@ -1,6 +1,8 @@
 * {
     margin: 0;
 }
+
+
 @font-face {
     font-family: "IcoMoon-Free";
     src: url("IcoMoon-Free.ttf") format("truetype");
@@ -18,9 +20,9 @@ html {
 
 .layout {
     display: grid;
-    min-height: 100%;
     grid-template-columns: 100%;
     grid-template-rows: 80px auto 100px;
+    min-height: 100%;
     margin: 0 auto;
 }
 
@@ -74,7 +76,6 @@ html {
 
 .search {
     float: right;
-    margin: 0 100px 0 0;
     font-size: 16px;
     width: 350px;
     height: 40px;
@@ -169,7 +170,7 @@ html {
 
 .monsterBlinky:hover {
     background-color: pink;
-    border-radius: 10px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 
 .monsterPinky:hover {
@@ -191,38 +192,29 @@ html {
     align-items: center;
     flex-direction: row;
 }
-.content > div {
-    width: 50%;
-}
+
 
 .leftContent {
     background: url("allGhosts.png") no-repeat center center;
-    width: 30%;
+    
     height: 300px;
-    float: left;
+    
     background-size: contain;
 }
 .rightContent {
     text-align: center;
-    display: flex;
-    align-items: center;
-    height: 300px;
-    padding-left: 50px;
+ 
 }
 
 .rightContent h1 {
     font-family: "Bebas Neue";
 }
-.rightContent p {
-    font-size: 16pt;
-    font-family: "Rubik", sans-serif;
-}
+
 
 .footer {
     background-color: rgb(54, 120, 219);
 }
 .footer > div {
-    width: 400px;
     height: 100%;
     margin: 0 auto;
     background: url("pacman.png") no-repeat center center;
@@ -302,3 +294,45 @@ html {
     background: url("inky.png") no-repeat center center;
 }
 /*******************************************************************************/
+
+
+@media all and (min-width: 481px){
+    .leftContent{
+        width: 30%;
+        float: left;
+    }
+    .rightContent{
+        display: flex;
+        align-items: center;
+        padding-left: 50px;
+    }
+
+    .content > div {
+        width: 50%;
+    }
+    .search{
+        margin: 0 100px 0 0;
+
+    }
+    .rightContent p {
+        font-family: "Rubik", sans-serif;
+        font-size: 16pt;
+    }
+
+
+}
+
+@media all and (max-width: 480px){
+    .leftContent{
+        width: 60vw;
+        margin: 0 auto;
+    }
+    .content > div {
+        padding: 0 10vw;
+    }
+    .rightContent p {
+       font-size: 20pt;
+       padding-bottom: 5vh;
+    }
+
+}
